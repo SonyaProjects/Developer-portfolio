@@ -60,21 +60,32 @@
 
 				<div class="swiper gallery-thumbs">
 					<div class="swiper-wrapper">
-						<div class="gallery-thumbs__slide swiper-slide">
-							<img src="img/1.png" alt="Картинка">
+						<div class="gallery-thumbs__slide swiper-slide" 
+						onclick="changeImage('image1', 'image2')">
+							<img src="img/1.png" alt="Картинка" id="image1">
+							<img src="img/5.jpg" alt="Картинка" id="image2" class="hover-image">
 						</div>
-						<div class="gallery-thumbs__slide swiper-slide">
-							<img src="img/2.jpg" alt="Картинка">
+						<div class="gallery-thumbs__slide swiper-slide" 
+						onclick="changeImage('image3', 'image4')">
+							<img src="img/2.jpg" alt="Картинка" id="image3">
+							<img src="img/Layer 1.png" alt="Картинка" id="image4" class="hover-image">
 						</div>
-						<div class="gallery-thumbs__slide swiper-slide">
-							<img src="img/3.jpg" alt="Картинка">
+						<div class="gallery-thumbs__slide swiper-slide"
+						onclick="changeImage('image5', 'image6')">
+							<img src="img/3.jpg" alt="Картинка" id="image5">
+							<img src="img/Layer 2.png" alt="Картинка" id="image6" class="hover-image">
 						</div>
-						<div class="gallery-thumbs__slide swiper-slide">
-							<img src="img/4.jpg" alt="Картинка">
+						<div class="gallery-thumbs__slide swiper-slide"
+						onclick="changeImage('image7', 'image8')">
+							<img src="img/4.jpg" alt="Картинка" id="image7">
+							<img src="img/Layer 3.png" alt="Картинка" id="image8" class="hover-image">
 						</div>
-						<div class="gallery-thumbs__slide swiper-slide">
-							<img src="img/5.jpg" alt="Картинка">
+						<div class="gallery-thumbs__slide swiper-slide"
+						onclick="changeImage('image9', 'image10')">
+							<img src="img/5.jpg" alt="Картинка" id="image9">
+							<img src="img/Layer 4.png" alt="Картинка" id="image10" class="hover-image">
 						</div>
+						
 					</div>
 					</div>
 			</div>
@@ -84,5 +95,9 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		window.onload = changeImage();
+		window.onload = changeImage1();
+	</script>
 </body>
 </html>
