@@ -36,7 +36,6 @@ html,body{
 	align-items: center;
 	/* margin-left: 10%;
 	margin-right: 10%; */
-	margin: auto;
 }
 /*------------------------------*/
 
@@ -67,8 +66,7 @@ html,body{
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  padding: 0;
+  padding: 3% 12%;
   text-align: left;
   overflow: visible;
 }
@@ -84,7 +82,7 @@ html,body{
 }
 
 .image-slider__wrapper{
-	/* margin-top: auto; */
+	margin: auto;
 	top: 10%;
 	text-align: center;
 }
@@ -129,9 +127,8 @@ html,body{
 }
 
 iframe {
-	margin: auto;
-	width: 40%;
-	height: 50vh;
+	width: 67%;
+	height: 55vh;
 	min-width: 2px;
 	position: relative;
 	display: block;
@@ -141,12 +138,12 @@ iframe {
 	background-size: 100%;
 	box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
 	border-radius: 6px;
+	margin:auto;
 }
 .description {
 	width: 30%;
 	float: left;
 	margin-left: 20px;
 	height: 100%;
-	overflow: ;
 }
 
