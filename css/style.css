@@ -70,8 +70,7 @@ html {
 }
 
 .image-slider__slide{
-	width: 80%;
-  max-width: 1800px;
+	width: 100%;
   min-height: 75%;
   bottom: 0;
   left: 0;
