@@ -27,8 +27,18 @@ html,body{
 	width: 100%;
 	line-height: 1;
 	font-size: 14px;
-	background-color: #B4B4B8;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  background-image: url(/img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .swiper-wrapper{
 	/* padding: 0px 10%; */
@@ -126,7 +136,7 @@ html,body{
 	border-radius: 25px;
 }
 
-iframe {
+/* iframe {
 	width: 67%;
 	height: 55vh;
 	min-width: 2px;
@@ -139,6 +149,25 @@ iframe {
 	box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
 	border-radius: 6px;
 	margin:auto;
+} */
+
+video {
+	object-fit: contain;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+.video {
+	width: 65%;
+	min-width: 2px;
+	position: relative;
+	display: block;
+	float: left;
+	clear: left;
+	height: calc(0.65 * 56.25%)*4;
+	overflow: hidden;
+	background-size: 100%;
+	box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
 }
 .description {
 	width: 30%;
@@ -146,4 +175,67 @@ iframe {
 	margin-left: 20px;
 	height: 100%;
 }
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	line-height: 1.5em;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-project {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 3rem;
+	font-weight: normal;
+	font-style: normal;
+	color: #2e313a;
+	margin-top: 0px;
+	/* text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.4); */
+	margin-bottom: -1rem;
+	padding-bottom: -1rem;
+}
+.label {
+	border-radius: 4px;
+	font-family: Helvetica;
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	line-height: normal;
+	padding-left: 6px;
+	padding-right: 6px;
+	display: inline-block;
+	margin-bottom: 0.3em;
+	margin-right: 0.3em;
+}
+
+.actiongame {
+	background-color: #A63661;
+	content: 'Action Game';
+}
+.shooter {
+	background-color: #C83456;
+	content: "First-person shooter";
+}
+.access {
+	background-color: #492E34;
+	content: "Early Access";
+}
+
+a:link, a:visited, a {
+	/* color: #f03; */
+	color: #000;
+	font-style: italic;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
 
