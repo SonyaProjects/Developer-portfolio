@@ -10,11 +10,11 @@
 a{
 	text-decoration: none;
 }
-ul,
+/* ul,
 ol,
 li{
 	list-style: none;
-}
+} */
 img{
 	vertical-align: top;
 }
@@ -80,16 +80,6 @@ html {
   overflow: visible;
 }
 
-
-.image-slider__image{
-	text-align: center;
-}
-
-.image-slider__image img{
-	max-width: 50%;
-	max-height: 50%;
-}
-
 .image-slider__wrapper{
 	margin: auto;
 	top: 10%;
@@ -128,11 +118,17 @@ html {
   opacity: 1;
 	filter: grayscale(0%);
 }
+.gallery-thumbs__slide{
+
+}
 
 .gallery-thumbs__slide img{
-	width: 250px;
-  height: 100px;
+	width: 70%;
+  height: 80%;
 	border-radius: 25px;
+	margin-left: 15%;
+	margin-right: 15%;
+	object-fit: cover;
 }
 
 /* iframe {
@@ -167,6 +163,39 @@ video {
 	background-size: 100%;
 	box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
 	border-radius: 6px;
+}
+
+.portfolio {
+	width: 35%;
+	min-width: 2px;
+	position: relative;
+	display: block;
+	float: left;
+	clear: left;
+	height: calc(0.65 * 56.25%)*4;
+	overflow: hidden;
+	background-size: 100%;
+	box-shadow: 4px 4px 20px -6px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+	margin-left: 20%;
+}
+ul {
+	display: block;
+	list-style: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	font-weight: bold;
+}
+li{
+	margin-bottom: 0.75em;
+}
+
+.markers li::marker {
+	color: #000;
+	font-size: 18px;
 }
 .description {
 	width: 30%;
@@ -214,18 +243,38 @@ p {
 	margin-bottom: 0.3em;
 	margin-right: 0.3em;
 }
-
-.actiongame {
+.image-slider .swiper-button-prev::after{
+	color: #888888;
+}
+.image-slider .swiper-button-next::after{
+	color: #888888;
+}
+.pinkTag {
 	background-color: #A63661;
-	content: 'Action Game';
 }
-.shooter {
+.lightRedTag {
 	background-color: #C83456;
-	content: "First-person shooter";
 }
-.access {
+.brownTag {
 	background-color: #492E34;
-	content: "Early Access";
+}
+.purpleTag{
+	background-color: #874b9c;
+}
+
+.redTag{
+	background-color: #ce2f4a;
+}
+
+.blueTag{
+	background-color: #7051ec;
+	content: "Roguelike Action Game";
+}
+.lightBlueTag{
+	background-color: #3b95ea;
+}
+.blueDarkTag{
+	background-color: #0154a2;
 }
 
 a:link, a:visited, a {
@@ -236,5 +285,17 @@ a:link, a:visited, a {
 	cursor: pointer;
 }
 
+@media only screen and (max-width: 768px){
+	.video {
+		width: 100%;}
 
-
+	.description {
+		width: 100%;
+		padding-top: 10%;}
+		.image-slider .swiper-button-prev::after {
+			font-size: 2.5rem;
+		}
+		.image-slider .swiper-button-next::after{
+			font-size: 2.5rem;
+		}
+	}
